@@ -43,7 +43,7 @@ const projects = (await getCollection("work"))
           alt="Gage Harmon"
           width="480"
           height="620"
-          src="/assets/portrait.jpg"
+          src="/assets/portrait2.jpeg"
         />
       </header>
 
@@ -55,7 +55,8 @@ const projects = (await getCollection("work"))
         <header class="section-header stack gap-2 lg:gap-4">
           <h3>My Projects</h3>
           <p>
-            Below are a few of my projects that I have worked on, take a look!
+            Below are a few of my projects that I have worked on, or take a look
+            at the "work" tab towards the top of the page!
           </p>
         </header>
 
@@ -121,6 +122,7 @@ const projects = (await getCollection("work"))
       aspect-ratio: 3 / 4;
       border-radius: 4.5rem;
       object-fit: cover;
+      box-shadow: 10px 5px 10px #e64d06;
     }
   }
 
@@ -133,25 +135,6 @@ const projects = (await getCollection("work"))
 
   .with-background {
     position: relative;
-  }
-
-  .with-background::before {
-    --hero-bg: var(--bg-image-subtle-2);
-
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    left: 50%;
-    width: 100vw;
-    aspect-ratio: calc(2.25 / var(--bg-scale));
-    top: 0;
-    transform: translateY(-75%) translateX(-50%);
-    background: url("/assets/backgrounds/noise.png") top center/220px repeat,
-      var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
-      var(--gray-999);
-    background-blend-mode: overlay, normal, normal, normal;
-    mix-blend-mode: var(--bg-blend-mode);
-    z-index: -1;
   }
 
   .with-background.bg-variant::before {
@@ -201,28 +184,6 @@ const projects = (await getCollection("work"))
 
     .cta {
       grid-area: cta;
-    }
-  }
-
-  /* ====================================================== */
-
-  .mention-card {
-    display: flex;
-    height: 7rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--gray-800);
-    border-radius: 1.5rem;
-    color: var(--gray-300);
-    background: var(--gradient-subtle);
-    box-shadow: var(--shadow-sm);
-  }
-
-  @media (min-width: 50em) {
-    .mention-card {
-      border-radius: 1.5rem;
-      height: 9.5rem;
     }
   }
 </style>
