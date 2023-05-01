@@ -15,3 +15,5 @@ Started from Astro Portfolio Template to save time:
 https://github.com/withastro/astro/tree/main/examples/portfolio
 
 Chat GPT for debugging and mass reformatting to save time.
+
+Nightcafe.com for AI generated photos for Projects.
