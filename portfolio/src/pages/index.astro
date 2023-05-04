@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 import MainLayout from "../layouts/MainLayout.astro";
 
 // Component Imports
-import CallToAction from "../components/CallToAction.astro";
+// import CallToAction from "../components/CallToAction.astro";
 import Grid from "../components/Grid.astro";
 import Hero from "../components/Hero.astro";
 import Icon from "../components/Icon.astro";
@@ -72,12 +72,12 @@ const projects = (await getCollection("work"))
           </Grid>
         </div>
 
-        <div class="cta">
+        <!-- <div class="cta">
           <CallToAction href="/work/">
             View All
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
-        </div>
+        </div> -->
       </section>
     </main>
     <Contact />
