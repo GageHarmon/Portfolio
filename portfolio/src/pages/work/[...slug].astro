@@ -3,7 +3,6 @@ import { CollectionEntry, getCollection } from "astro:content";
 
 import MainLayout from "../../layouts/MainLayout.astro";
 
-import Contact from "../../components/Contact.astro";
 import Hero from "../../components/Hero.astro";
 import Icon from "../../components/Icon.astro";
 import Pill from "../../components/Pill.astro";
@@ -13,8 +12,6 @@ interface Props {
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
-// Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
-// https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
   const work = await getCollection("work");
   return work.map((entry) => ({
@@ -56,7 +53,6 @@ const { Content } = await entry.render();
         </div>
       </main>
     </div>
-    <Contact />
   </div>
 </MainLayout>
 

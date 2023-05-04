@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 
 import MainLayout from "../layouts/MainLayout.astro";
 
-import Contact from "../components/Contact.astro";
 import ProjectDisplay from "../components/ProjectDisplay.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
@@ -34,6 +33,5 @@ const projects = (await getCollection("work")).sort(
         }
       </Grid>
     </main>
-    <Contact />
   </div>
 </MainLayout>
